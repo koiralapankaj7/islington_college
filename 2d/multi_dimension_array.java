@@ -26,7 +26,7 @@ class Example {
                         for (int j = 0; j < abc[i].length; j++) {
                                 /*
                                  * abc[i] means value from i index of multi dimension array. which will be
-                                 * single dimension array. abc[i][j] means value of i index of multi dimension
+                                 * single dimension array.\ abc[i][j] means value of i index of multi dimension
                                  * array followed by value of j index of single dimension array
                                  */
 
