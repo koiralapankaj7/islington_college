@@ -9,6 +9,7 @@ class Oldest {
                 int sita = 30;
                 int hari = 25;
 
+                // For calculating oldest only
                 if (ram > sita && ram > hari) {
                         System.out.println("Ram is oldest");
                 } else if (sita > ram && sita > hari) {
@@ -22,6 +23,7 @@ class Oldest {
                 // statement
 
                 // Way 1
+                // For youngest only
                 if (ram < sita && ram < hari) {
                         System.out.println("Ram is youngest");
                 } else if (sita < ram && sita < hari) {
@@ -31,6 +33,7 @@ class Oldest {
                 }
 
                 // way 2
+                // THIS CODE WILL PRINT OLDEST AND YOUNGEST AT SAME TIME
                 // This solution seems confusing but wou can learn how we can nested if else
                 // statement
                 // This solution is for learning purpose
