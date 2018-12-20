@@ -1,0 +1,1 @@
+// Q6. Write a program to display the reverse of given input number.

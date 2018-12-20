@@ -1,0 +1,1 @@
+// Q4. WAP to display the series of 50,45,40....5 using do while loop.

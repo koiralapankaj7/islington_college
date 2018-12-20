@@ -1,0 +1,1 @@
+// Q1. Write a program to display the even numbers from 2 to 20 using all loops.
