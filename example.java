@@ -7,6 +7,7 @@ class Example {
 
                 int abc[][] = { a, b, c };
 
+                //
                 for (int i = 0; i < abc.length; i++) {
                         // i = 0
                         // abc[i] => a
