@@ -1,0 +1,138 @@
+=======================================================================================================
+1. What is GUI?
+=======================================================================================================
+        Short for graphical user interface, a GUI is an interface that uses icons or other visual indicators 
+to interact with electronic devices, rather than only text via a command line.
+        Graphical User Interface (GUI) offers user interaction via some graphical components. 
+For example our underlying Operating System also offers GUI via window,frame,Panel, Button, 
+Textfield, TextArea, Listbox, Combobox, Label, Checkbox etc. These all are known as components. 
+Using these components we can create an interactive user interface for an application.
+        GUI provides result to end user in response to raised events.GUI is entirely based events. 
+For example clicking over a button, closing a window, opening a window, typing something in a 
+textarea etc. These activities are known as events.GUI makes it easier for the end user to use an 
+application. It also makes them interesting.
+
+GUI => Graphical user interface
+CUI => Character user interface
+
+=======================================================================================================
+2. Examples of GUI based Applications
+=======================================================================================================
+1. Automated Teller Machine (ATM)
+2. Airline Ticketing System
+3. Information Kiosks at railway stations
+4. Mobile Applications
+5. Navigation Systems
+
+=======================================================================================================
+3. How to create GUI?
+=======================================================================================================
+
+        1. AWT (Abstract Window Toolkit)
+                API to develop GUI or window based application in JAVA. AWT is thin layer of code on top of
+                OS. Components of AWT are platform dependent. AWT is heavy weight, because components are using 
+                the resources of OS. Using AWT you have to implement a lot of things yourself.
+                PACKAGE => java.awt 
+                Package Link => https://docs.oracle.com/javase/7/docs/api/java/awt/package-summary.html
+                CLASSES => Frame, TextField, Label, Button etc.
+
+        2. Swing
+                Java Swing is a part of Java Foundation Classes (JFC) that is used to create 
+                window-based applications. It is built on the top of AWT (Abstract Windowing Toolkit) API and 
+                entirely written in java. Unlike AWT, Java Swing provides platform-independent and lightweight 
+                components.
+                PACKAGE => javax.swing 
+                Package Link => https://docs.oracle.com/javase/7/docs/api/javax/swing/package-summary.html
+                CLASSES => JButton, JTextField, JTextArea, JRadioButton, JCheckbox, JMenu, JColorChooser etc.
+
+        What is API?
+        ------------
+                An application program interface (API) is a set of routines, protocols, and tools for building software 
+        applications. Basically, an API specifies how software components should interact. Additionally, 
+        APIs are used when programming graphical user interface (GUI) components.
+                For example, In Object Oriented Design, code is organized into objects. Your application may have hundreds of objects 
+        defined that can interact with one another. Each object has an API — a set of public methods and 
+        properties that it uses to interact with other objects in your application. An object may also have 
+        inner logic that is private, meaning that it’s hidden from the outside scope (and not an API).
+        Reference => https://medium.freecodecamp.org/what-is-an-api-in-english-please-b880a3214a82
+
+        What is JFC?
+        -----------
+        The Java Foundation Classes (JFC) are a set of GUI components which simplify the development of 
+        desktop applications. API's available in JFC are Swing, JAVA 2d, Accessibility and Drag & Drop. 
+        Link => https://www.math.uni-hamburg.de/doc/java/tutorial/post1.0/preview/jfc.html
+
+=======================================================================================================
+4. Basic Terminologies
+=======================================================================================================
+1. Component	
+        Component is an object having a graphical representation that can be displayed on the screen 
+        and that can interact with the user. For examples buttons, checkboxes, list and scrollbars of a 
+        graphical user interface.
+2. Container	
+        Container object is a component that can contain other components.Components added to a container 
+        are tracked in a list. The order of the list will define the components' front-to-back stacking 
+        order within the container. If no index is specified when adding a component to a container, 
+        it will be added to the end of the list.
+3. Panel	
+        Panel provides space in which an application can attach any other components, including other 
+        panels.
+4. Window	
+        Window is a rectangular area which is displayed on the screen. In different window we can execute 
+        different program and display different data. Window provide us with multitasking environment. 
+        A window must have either a frame, dialog, or another window defined as its owner when it's constructed.
+5. Frame	
+        A Frame is a top-level window with a title and a border. The size of the frame includes any area 
+        designated for the border. Frame encapsulates window. It and has a title bar, menu bar, borders, 
+        and resizing corners.
+6. Canvas	
+        Canvas component represents a blank rectangular area of the screen onto which the application can 
+        draw. Application can also trap input events from the use from that blank area of Canvas component.
+
+
+
+=======================================================================================================
+5. Components of swing.
+=======================================================================================================
+1. Container
+2. JFrame
+3. JLabel
+4. JTextfield
+5. JTextArea
+6. JButton
+7. JCheckBox
+8. JRadioButton
+9. JComboBox
+4. JMenuBar
+5. JMenu
+6. JMenuItem
+7. JOptionPane
+etc.............
+
+=======================================================================================================
+How to create GUI?
+=======================================================================================================
+
+=======================================================================================================
+How to create GUI?
+=======================================================================================================
+
+=======================================================================================================
+How to create GUI?
+=======================================================================================================
+
+=======================================================================================================
+How to create GUI?
+=======================================================================================================
+
+=======================================================================================================
+How to create GUI?
+=======================================================================================================
+
+=======================================================================================================
+How to create GUI?
+=======================================================================================================
+
+=======================================================================================================
+How to create GUI?
+=======================================================================================================

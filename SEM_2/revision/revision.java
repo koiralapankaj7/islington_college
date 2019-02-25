@@ -1,9 +1,6 @@
-import javax.jws.soap.SOAPBinding.Use;
-
-import com.sun.beans.introspect.PropertyInfo.Name;
 
 class User {
-        private String name = "B";
+        private String name = "A";
         private String profile;
         private String cover;
         private String add;
@@ -42,9 +39,9 @@ class Isliongton extends User {
                 super("name", "profile", "cover");
         }
 
-        void display() {
+        void display(String message) {
 
-                System.out.print("This is islington");
+                System.out.print(message);
         }
 }
 
@@ -52,8 +49,10 @@ class Demo {
 
         public static void main(String[] args) {
 
+                String name = "ABC";
                 Isliongton obj = new Isliongton();
-                obj.display();
+                obj.display("1");
+                obj.display("5");
 
         }
 }
