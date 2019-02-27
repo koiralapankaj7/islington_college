@@ -62,6 +62,21 @@ CUI => Character user interface
         desktop applications. API's available in JFC are Swing, JAVA 2d, Accessibility and Drag & Drop. 
         Link => https://www.math.uni-hamburg.de/doc/java/tutorial/post1.0/preview/jfc.html
 
+        Every user interface considers the following three main aspects −
+        ------------------------------------------------------------------
+        1. UI Elements
+                These are the core visual elements the user eventually sees and interacts with. 
+        GWT provides a huge list of widely used and common elements varying from basic to complex, 
+        which we will cover in this tutorial.
+        2. Layouts 
+                They define how UI elements should be organized on the screen and provide a final look 
+        and feel to the GUI (Graphical User Interface). This part will be covered in the Layout chapter.
+        3. Behavior
+                These are the events which occur when the user interacts with UI elements. 
+        This part will be covered in the Event Handling chapter.
+
+
+
 =======================================================================================================
 4. Basic Terminologies
 =======================================================================================================
