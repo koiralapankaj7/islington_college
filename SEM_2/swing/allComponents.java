@@ -25,11 +25,16 @@ class AllComponents implements ActionListener {
         // 13. JCheckBox
         // 14. JRadioButton
         // 15. JComboBox
-        // 16. JTextArea
+        // 16. JTextAreas
         //
 
         JFrame jFrame;
         Container container;
+
+        public static void main(String[] args) {
+                AllComponents allComponents = new AllComponents();
+                allComponents.runApp();
+        }
 
         void runApp() {
                 myJFrame();
@@ -44,7 +49,7 @@ class AllComponents implements ActionListener {
                 // myJCheckBox();
                 // myJRadioButton();
                 // myJComboBox();
-                myJTextArea();
+                // myJTextArea();
         }
 
         // 1. JFrame
@@ -53,11 +58,12 @@ class AllComponents implements ActionListener {
                 jFrame.setVisible(true);
                 // Menu bar could be hidden if you dont call setLayout method
                 jFrame.setLayout(null);
-                jFrame.setBackground(Color.BLUE);
+                // jFrame.setBackground(Color.BLUE);
                 // Using setLocationRelativeTo method before setSize could provide different
                 // result
                 jFrame.setSize(600, 400);
                 // jFrame.pack();
+
                 jFrame.setLocationRelativeTo(null);
                 jFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
                 jFrame.setTitle("All Components Updated");
@@ -71,45 +77,54 @@ class AllComponents implements ActionListener {
 
         // 3. JLabel
         void myJLabel() {
-                JLabel jLabel = new JLabel("This is jLabel");
-                jLabel.setText("This is jLabel updated");
-                // jLabel.setHorizontalAlignment(SwingConstants.CENTER);
-                // jLabel.setVerticalAlignment(SwingConstants.TOP);
-                container.add(jLabel);
-                // jFrame.add(jLabel);
+                // JLabel jLabel = new JLabel("This is jLabel");
+                // // jLabel.setText("This is jLabel updated");
+                // jLabel.setBounds(40, 40, 200, 40);
+                // // jLabel.setHorizontalAlignment(SwingConstants.CENTER);
+                // // jLabel.setVerticalAlignment(SwingConstants.TOP);
+                // container.add(jLabel);
+                // // jFrame.add(jLabel);
         }
 
         // 4. JMenuBar
-        // 5. JMen
+        // 5. JMenu
         // 6. JMenuItem
         void myJMenuBar() {
-                JMenu menu, submenu;
-                JMenuItem i1, i2, i3, i4, i5;
 
-                JMenuBar mb = new JMenuBar();
-                menu = new JMenu("Menu");
-                submenu = new JMenu("Sub Menu");
-                i1 = new JMenuItem("Item 1");
-                i2 = new JMenuItem("Item 2");
-                i3 = new JMenuItem("Item 3");
-                i4 = new JMenuItem("Item 4");
-                i5 = new JMenuItem("Item 5");
-                menu.add(i1);
-                menu.add(i2);
-                menu.add(i3);
-                submenu.add(i4);
-                submenu.add(i5);
-                menu.add(submenu);
-                mb.add(menu);
-                jFrame.setJMenuBar(mb);
+                // JMenuBar mb = new JMenuBar();
+
+                // // JMenu menu, submenu;
+                // // JMenuItem i1, i2, i3, i4, i5;
+
+                // JMenu menu = new JMenu("Menu");
+                // JMenu submenu = new JMenu("Sub Menu");
+
+                // JMenuItem i1 = new JMenuItem("Item 1");
+                // JMenuItem i2 = new JMenuItem("Item 2");
+                // JMenuItem i3 = new JMenuItem("Item 3");
+                // JMenuItem i4 = new JMenuItem("Item 4");
+                // JMenuItem i5 = new JMenuItem("Item 5");
+
+                // menu.add(i1);
+                // menu.add(i2);
+                // menu.add(i3);
+
+                // submenu.add(i4);
+                // submenu.add(i5);
+
+                // menu.add(submenu);
+                // mb.add(menu);
+
+                // jFrame.setJMenuBar(mb);
 
         }
 
         // 7. JOptionPane
         void myJOptionPane() {
-                JOptionPane.showMessageDialog(jFrame, "Hello, This is JOptionPane.");
-                JOptionPane.showMessageDialog(jFrame, " Successfully Updated.", " Alert", JOptionPane.WARNING_MESSAGE);
-                String name = JOptionPane.showInputDialog(jFrame, "Enter Name");
+                // JOptionPane.showMessageDialog(jFrame, "Hello, This is JOptionPane.");
+                // JOptionPane.showMessageDialog(jFrame, " Successfully Updated.", "Alert",
+                // JOptionPane.WARNING_MESSAGE);
+                // String name = JOptionPane.showInputDialog(jFrame, "Enter Name");
 
                 // For this need window listener
                 // int a = JOptionPane.showConfirmDialog(jFrame, "Are you sure?");
@@ -165,17 +180,22 @@ class AllComponents implements ActionListener {
                 // ===================================================
                 // For textfield
                 // ===================================================
-                // String s1 = tf1.getText();
-                // String s2 = tf2.getText();
-                // int a = Integer.parseInt(s1);
-                // int b = Integer.parseInt(s2);
-                // int c = 0;
+                // String s1 = tf1.getText(); // 10
+                // String s2 = tf2.getText(); // 20
+
+                // int a = Integer.parseInt(s1); // 10
+                // int b = Integer.parseInt(s2); // 20
+
+                // int c = 0; // 30
+
                 // if (e.getSource() == b1) {
                 // c = a + b;
                 // } else if (e.getSource() == b2) {
                 // c = a - b;
                 // }
-                // String result = String.valueOf(c);
+
+                // String result = String.valueOf(c); // 30
+
                 // tf3.setText(result);
 
                 // ===================================================
@@ -259,8 +279,11 @@ class AllComponents implements ActionListener {
 
         // 10. Buttons
         void myButtons() {
-                // JButton b = new JButton(new ImageIcon("java_icon.png"));
+
+                // JButton b = new JButton(new ImageIcon("java_icon.jpeg"));
+
                 // JButton c = new JButton("Normal");
+
                 // b.setBounds(100, 100, 100, 40);
                 // c.setBounds(100, 160, 100, 40);
                 // jFrame.add(b);
@@ -281,8 +304,18 @@ class AllComponents implements ActionListener {
                 // b1.setBounds(50, 200, 50, 50);
                 // b2 = new JButton("-");
                 // b2.setBounds(120, 200, 50, 50);
+
                 // b1.addActionListener(this);
-                // b2.addActionListener(this);
+                // // b2.addActionListener(this);
+
+                // b2.addActionListener(new ActionListener() {
+
+                // @Override
+                // public void actionPerformed(ActionEvent e) {
+
+                // }
+                // });
+
                 // jFrame.add(tf1);
                 // jFrame.add(tf2);
                 // jFrame.add(tf3);
@@ -377,11 +410,6 @@ class AllComponents implements ActionListener {
                 // jFrame.add(l2);
                 // jFrame.add(area);
                 // jFrame.add(b);
-        }
-
-        public static void main(String[] args) {
-                AllComponents allComponents = new AllComponents();
-                allComponents.runApp();
         }
 
         // In case you want to know
