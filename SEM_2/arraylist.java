@@ -11,7 +11,44 @@ class ArrayListPractice {
         // different:
 
         public static void main(String[] args) {
-                new ArrayListPractice().runApp();
+                new ArrayListPractice().practice();
+        }
+
+        void practice() {
+                // ArrayList arr = new ArrayList<Integer>();
+                // // Add
+                // arr.add(1);
+                // arr.add(2);
+                // arr.add(3);
+                // arr.add(4);
+                // arr.add(5);
+                // arr.add(6);
+                // // Access
+
+                // arr.get(2); // =>3
+
+                // for (int i = 0; i < arr.size(); i++) {
+                // System.out.println(arr.get(i));
+                // }
+
+                ArrayList arr = new ArrayList<Developer>();
+                Developer dev1 = new Developer("A", 20, true);
+                Developer dev2 = new Developer("B", 21, false);
+                Developer dev3 = new Developer("C", 22, true);
+                Developer dev4 = new Developer("D", 23, false);
+                arr.add(dev1);
+                arr.add(dev2);
+                arr.add(dev3);
+                arr.add(dev4);
+
+                for (int i = 0; i < arr.size(); i++) {
+                        //
+                        Developer obj = (Developer) arr.get(i);
+
+                        System.out.println(obj.name + " " + obj.age + " " + obj.isStudent);
+
+                }
+
         }
 
         void runApp() {
@@ -50,28 +87,25 @@ class ArrayListPractice {
                 }
 
                 // You can also loop through an ArrayList with the Iterator
-                Iterator itr = cars.iterator();
-                while (itr.hasNext()) {
-                        System.out.println(itr.next());
-                }
+                // Iterator itr = cars.iterator();
+                // while (itr.hasNext()) {
+                // System.out.println(itr.next());
+                // }
 
                 // Another useful class in the java.util package is the Collections
                 // class, which include the sort() method for sorting lists alphabetically or
                 // numerically:
-                Collections.sort(cars); // Sort cars
-                for (String i : cars) {
-                        System.out.println(i);
-                }
+                // Collections.sort(cars); // Sort cars
+                // for (String i : cars) {
+                // System.out.println(i);
+                // }
 
-                ArrayList arrayList = new ArrayList<String>();
-
+                // ArrayList arrayList = new ArrayList<Integer>();
                 // rangeCheckForAdd error at runtime
                 // arrayList.add(10, 20);
-
                 // Object cannot be converted to int
-                String val = arrayList.get(0);
-
-                System.out.println(arrayList.size());
+                // String val = arrayList.get(0);
+                // System.out.println(arrayList.size());
         }
 
         void constructorOfArrayList() {
@@ -141,4 +175,19 @@ class ArrayListPractice {
                 // void trimToSize() : It is used to trim the capacity of this ArrayList
                 // instance to be the list's current size.
         }
+}
+
+class Developer {
+        String name;
+        int age;
+        boolean isStudent;
+
+        Developer(String name, int age, boolean isStudent) {
+                this.name = name;
+                this.age = age;
+                this.isStudent = isStudent;
+        }
+
+        // getter
+        // setter
 }
