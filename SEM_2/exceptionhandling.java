@@ -47,12 +47,26 @@ class EsceptionHandlingPractice {
         }
 
         void runApp() {
+
                 try {
-                        // code that may raise exception
-                        int data = 100 / 0;
-                } catch (ArithmeticException e) {
-                        System.out.println(e);
+
+                        // Statement 1
+                        // Statement 2
+                        // Statement 3
+                        // Statement 4 => error
+                        // Statement 5
+                        // Statement 6
+
+                } catch (NullPointerException npe) {
+
+                } catch (ArithmeticException ae) {
+
+                } catch (NumberFormatException nfe) {
+
+                } catch (Exception e) {
+
                 }
+
                 // rest code of the program
                 System.out.println("rest of the code...");
 

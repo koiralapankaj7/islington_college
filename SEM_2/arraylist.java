@@ -15,27 +15,45 @@ class ArrayListPractice {
         }
 
         void practice() {
+
                 // ArrayList arr = new ArrayList<Integer>();
-                // // Add
+
+                // // // Add
                 // arr.add(1);
                 // arr.add(2);
-                // arr.add(3);
+                // arr.add(30);
                 // arr.add(4);
                 // arr.add(5);
                 // arr.add(6);
-                // // Access
+                // // // Access
 
-                // arr.get(2); // =>3
+                // arr.get(2); //
+
+                // arr.add(2, 40);
+                // arr.set(2, 60);
+
+                // arr.remove(2);
 
                 // for (int i = 0; i < arr.size(); i++) {
+                // int var = arr.get(i);
                 // System.out.println(arr.get(i));
                 // }
 
-                ArrayList arr = new ArrayList<Developer>();
+                // 1. Non Generic / Raw
+                // ArrayList arr = new ArrayList<>();
+                // 2. error: illegal start of type (Compilation)
+                // ArrayList<> arr = new ArrayList<Developer>();
+                // 3. If you use angular bracket with class name then you must provide data type
+                // Class name as well
+                // ArrayList<Developer> arr = new ArrayList<>();
+                // 4. Note: arraylist.java uses unchecked or unsafe operations.
+                // ArrayList arr = new ArrayList<Developer>();
+
                 Developer dev1 = new Developer("A", 20, true);
                 Developer dev2 = new Developer("B", 21, false);
                 Developer dev3 = new Developer("C", 22, true);
                 Developer dev4 = new Developer("D", 23, false);
+
                 arr.add(dev1);
                 arr.add(dev2);
                 arr.add(dev3);
