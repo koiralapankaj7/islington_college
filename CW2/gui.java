@@ -2,11 +2,13 @@ import javax.swing.*;
 import javax.swing.GroupLayout.Alignment;
 import javax.swing.border.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 // For border watch this
 //https://docs.oracle.com/javase/tutorial/uiswing/components/border.html
 
-class GUI {
+class GUI implements ActionListener {
 
         JFrame frame;
 
@@ -60,6 +62,14 @@ class GUI {
                 btnAppointJunior = new JButton("Appoint Junior Dev");
                 btnDisplayAll = new JButton("Display All");
                 btnClear = new JButton("Clear");
+
+                btnPlatformForJunior.addActionListener(this);
+                btnPlatformForSenior.addActionListener(this);
+                btnAppointSenior.addActionListener(this);
+                btnContractTermination.addActionListener(this);
+                btnAppointJunior.addActionListener(this);
+                btnDisplayAll.addActionListener(this);
+                btnClear.addActionListener(this);
         }
 
         void runApp() {
@@ -234,5 +244,32 @@ class GUI {
                 button.setBounds(x, y, width, height);
 
                 panel.add(button);
+        }
+
+        @Override
+        public void actionPerformed(ActionEvent e) {
+
+                switch (e.getActionCommand()) {
+                case "Add for Junior":
+                        System.out.println("I am Platform button for junior");
+                        break;
+
+                case "Add for Senior":
+                        System.out.println("I am Platform button for senior");
+                        break;
+
+                default:
+                        break;
+                }
+
+                // if (e.getSource() == btnPlatformForJunior) {
+
+                // } else if (e.getSource() == btnPlatformForSenior) {
+
+                // } else if (e.getSource() == btnAppointSenior) {
+
+                // } else if (e.getSource() == btnAppointJunior) {
+
+                // }
         }
 }
