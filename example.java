@@ -5,6 +5,7 @@ class Example {
                 int b[] = { 2, 3, 4, 5, 6 };
                 int c[] = { 3, 4, 5, 6, 7, 8 };
 
+                // Comment added
                 int abc[][] = { a, b, c };
 
                 for (int i = 0; i < abc.length; i++) {
