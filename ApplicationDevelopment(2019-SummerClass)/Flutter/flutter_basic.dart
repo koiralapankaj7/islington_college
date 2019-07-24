@@ -1,1 +1,0 @@
-main(List<String> args) {}
